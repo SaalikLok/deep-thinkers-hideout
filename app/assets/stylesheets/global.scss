@@ -1,0 +1,11 @@
+@import 'variables';
+
+body{
+  background-color: $background;
+  color: $text;
+  font-family: $body-font;
+}
+
+h1, h2, h3 {
+  font-family: $title-font;
+}
