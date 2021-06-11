@@ -1,7 +1,10 @@
 @import 'variables';
 
-body{
+html{
   background-color: $background;
+}
+
+body{
   color: $text;
   font-family: $body-font;
 }

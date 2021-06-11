@@ -1,0 +1,13 @@
+.container
+  %h2.title.has-text-centered Welcome.
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .field
+      =f.label :email, class: "label"
+      =f.email_field :email, autofocus: true, autocomplete: "email", class: "input"
+    .field 
+      =f.label :password, class: "label"
+      =f.password_field :password, autocomplete: "current-password", class: "input"
+    .action 
+      =f.submit "Enter the Hideout", class: "button is-dark mb-5"
+
+  =render "devise/shared/links"
