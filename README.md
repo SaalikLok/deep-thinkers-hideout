@@ -1,24 +1,22 @@
-# README
+# Deep Thinkers' Hideout
+A digital hideout for the deliberate. Thinkers, writers, and builders.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Motivation
+This is the open source repo that powers an online community for thinkers, writers, and builders. It's a web page for deliberate thinkers to share, connect, and find inspiration.
 
-Things you may want to cover:
+## Contributing
+The Deep Thinkers' Hideout is built with Ruby on Rails. It uses HAML for markup, and Postgres as a database. In the spirit of this community evolving from within, any developers within the community are invited to contribute to the code of the community itself.
 
-* Ruby version
+### Cloning and Set Up
 
-* System dependencies
+- Ensure Ruby 3.0.0 is installed on your machine. 
+- Clone this repository.
+- `cd` to the project directory
+- run `bundle` to install the necessary gems
+- to create the database run: `bundle exec rake db:create`
+- to run migrations: `bundle exec rake db:migrate`
 
-* Configuration
+### Testing and Running Locally
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- To run locally use the `bundle exec rails s` command in the root directory.
+- To run tests, run `rspec` in the root directory.
