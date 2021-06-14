@@ -11,6 +11,6 @@ feature 'member logs in' do
 
     click_button "Enter the Hideout"
 
-    expect(page).to have_content("The Deep Thinkers' Hideout")
+    expect(page).to have_current_path(posts_path)
   end
 end
