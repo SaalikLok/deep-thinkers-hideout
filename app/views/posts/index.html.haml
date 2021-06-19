@@ -1,5 +1,17 @@
-%h2.title These are all the Posts!
+.container
+  %h2.title These are all the Posts!
+  .container
+    = form_for @post do |f|
+      .field.columns
+        .column.is-9 
+          = f.text_area :body, {class: "textarea", rows: "2"}
+        .column.is-3
+          = f.submit "Add Post", {class: "button is-dark"}
 
-=@posts.each do |post|
-  .card
-    =post.body
+  .section.container
+    - @posts.each do |post|
+      .box
+        %p.subtitle= post.body
+        %span.is-size-7= post.member.name
+        %span ~
+        %span.is-size-7= post.created_at.strftime("%l:%M%p %b %d %Y")
